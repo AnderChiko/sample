@@ -25,6 +25,7 @@
     <ProjectReference Include="..\..\..\..\Context\Test.Context\Test.Context.csproj" />
     <ProjectReference Include="..\..\..\..\Core\Test.Core\Test.Core.csproj" />
     <ProjectReference Include="..\..\..\..\Services\Test.BusinessLogic.Interfaces\Test.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\..\Services\Test.BusinessLogic\Test.BusinessLogic.csproj" />
     <ProjectReference Include="..\..\..\API\Test.Api.Models\Test.Models.csproj" />
   </ItemGroup>
 
