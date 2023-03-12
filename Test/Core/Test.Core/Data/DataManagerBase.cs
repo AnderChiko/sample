@@ -81,7 +81,7 @@ namespace Test.Core.Data
                 return new Result(Status.Success)
                 {
                     Message = "Successfully Deleted",
-                    StatusCode = "200",
+                   
                 };
             }
         }
@@ -143,7 +143,6 @@ namespace Test.Core.Data
                 return new Result(Status.Success)
                 {
                     Message = "Successfully Deleted",
-                    StatusCode = "200",
                 };
             }
         }

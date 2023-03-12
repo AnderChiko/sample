@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Context\Test.Context\Test.Context.csproj" />
     <ProjectReference Include="..\..\..\Services\Test.BusinessLogic\Test.BusinessLogic.csproj" />
-    <ProjectReference Include="..\Test.Api.Models\Test.Api.Models.csproj" />
+    <ProjectReference Include="..\Test.Api.Models\Test.Models.csproj" />
   </ItemGroup>
 
 </Project>

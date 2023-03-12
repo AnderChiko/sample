@@ -22,7 +22,5 @@ namespace Test.Core.Models.Data
         public Status Status { get; set; }
 
         public string Message { get; set; }
-
-        public string StatusCode { get; set; }
     }
 }

@@ -11,11 +11,10 @@ namespace Test.Core.Models.Data
     {
         public DataResult( T entry)
         {
-            Entry = entry;
+            Data = entry;
         }
-        public T Entry { get; set; }
+        public T Data { get; set; }
         public Status Status { get; set; } = Status.Success;
         public string Message { get; set; }
-        public string StatusCode { get; set; }
     }
 }

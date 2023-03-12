@@ -1,0 +1,54 @@
+<div class="card">
+  <div class="card-header bg-secondary">
+    <h3 class="text-light">Messages</h3>
+  </div>
+  <form [formGroup]="detailForm">
+    <div class="card-body">
+      <div class="mx-4 my-2">
+
+        <div class="form-row">
+          <div class="col-md-4">
+            <label>Name</label>
+          </div>
+          <div class="col-md-8">
+            <input type="text" class="form-control form-control-sm w-md-75" formControlName="Name"
+                   [ngClass]="{ 'is-invalid': Submitted && P1.Name.errors }"
+                   maxlength="50">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4">
+            <label>Description</label>
+          </div>
+          <div class="col-md-8">
+            <input type="text" class="form-control form-control-sm w-md-75" formControlName="Description"
+                    [ngClass]="{ 'is-invalid': Submitted && P1.Description.errors }"
+                   maxlength="1000">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4">
+            <label>Active</label>
+          </div>
+          <div class="col-md-8">
+            <input type="checkbox" class="form-check-input" formControlName="Active"
+                    [ngClass]="{ 'is-invalid': Submitted && P1.Active.errors }"
+                   maxlength="50">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card-footer text-right">
+      <button mat-stroked-button (click)="save()" class="btn btn-secondary btn-fixed ml-1">
+        save
+      </button>
+    </div>
+  </form>
+</div>
+{{messageResponse.data.code}}
+<div *ngIf="messageResponse.data.code > 0">
+  <app-campaign-details message-code="messageResponse.data.code"></app-campaign-details>
+</div>

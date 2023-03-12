@@ -11,7 +11,5 @@ namespace Test.Core.Models.Data
         Status Status { get; set; }
 
         string Message { get; set; }
-
-        string StatusCode { get; set; }
     }
 }

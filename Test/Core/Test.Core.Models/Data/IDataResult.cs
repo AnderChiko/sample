@@ -8,6 +8,6 @@ namespace Test.Core.Models.Data
 {
     public interface IDataResult<T> : IResult
     {
-        T Entry { get; set; }
+        T Data { get; set; }
     }
 }
